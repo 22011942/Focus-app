@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/book"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/book_data"
+            app:srcCompat="@drawable/baseline_menu_book_24" />
+
+        <TextView
+            android:id="@+id/bookinfo"
+            android:layout_width="366dp"
+            android:layout_height="127dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="165dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="In the time you've spent on your phone you could have read: "
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/book_data"
+            android:layout_width="263dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="33dp"
+            android:text="bookdata"
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintBottom_toTopOf="@+id/book"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bookinfo"
+            app:layout_constraintVertical_bias="0.13999999" />
+
+        <ImageView
+            android:id="@+id/skill"
+            android:layout_width="227dp"
+            android:layout_height="248dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skill_data"
+            app:srcCompat="@drawable/baseline_extension_24" />
+
+        <TextView
+            android:id="@+id/skilInfo"
+            android:layout_width="305dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="119dp"
+            android:layout_marginEnd="76dp"
+            android:text="Learned: "
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/book" />
+
+        <TextView
+            android:id="@+id/skill_data"
+            android:layout_width="312dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="72dp"
+            android:text="skillData"
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skilInfo" />
+
+        <ImageView
+            android:id="@+id/degree"
+            android:layout_width="247dp"
+            android:layout_height="258dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/degree_data"
+            app:srcCompat="@drawable/baseline_school_24" />
+
+        <TextView
+            android:id="@+id/degreeinfo"
+            android:layout_width="195dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="557dp"
+            android:text="Studied:"
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skill_data" />
+
+        <TextView
+            android:id="@+id/degree_data"
+            android:layout_width="288dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="27dp"
+            android:text="degreedata"
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/degreeinfo" />
+
+        <ImageView
+            android:id="@+id/language"
+            android:layout_width="218dp"
+            android:layout_height="219dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/language_data"
+            app:srcCompat="@drawable/baseline_language_24" />
+
+        <TextView
+            android:id="@+id/languageinfo"
+            android:layout_width="135dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="309dp"
+            android:layout_marginEnd="138dp"
+            android:text="Learned: "
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/degree" />
+
+        <TextView
+            android:id="@+id/language_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="59dp"
+            android:text="languagedata"
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageinfo" />
+
+        <ImageView
+            android:id="@+id/instrument"
+            android:layout_width="223dp"
+            android:layout_height="445dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instrument_data"
+            app:srcCompat="@drawable/baseline_music_note_24" />
+
+        <TextView
+            android:id="@+id/instrumentinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="532dp"
+            android:text="Learned: "
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/language_data" />
+
+        <TextView
+            android:id="@+id/instrument_data"
+            android:layout_width="380dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="24dp"
+            android:text="instrumentdata"
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instrumentinfo" />
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="40dp"
+            android:text="Okay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalTime"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_width="381dp"
+            android:layout_height="174dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="198dp"
+            android:layout_marginEnd="4dp"
+            android:text="TextView"
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instrument" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
